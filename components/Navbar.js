@@ -3,7 +3,6 @@ import Head from "next/Head";
 
 const Navbar = () => {
     return (
-
         <div className="px-4">
             <Head>
                 <title>users information app</title>

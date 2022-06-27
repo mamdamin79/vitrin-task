@@ -1,8 +1,13 @@
 import axios from "axios";
+import Head from "next/head";
 const Post = (props) => {
     console.log(props)
     return (
         <div className="flex justify-center items-center bg-gray-100 w-full h-screen">
+            <Head>
+                <title>{props.data.title}</title>
+                <meta name="description" content={props.data.body}/>
+            </Head>
             <div className="bg-white shadow-md rounded-md w-2/3 mx-auto p-2">
                 <h1 className="text-slate-800 font-bold text-center mb-6 ">{props.data.title}</h1>
                 <p className="text-gray-600 font-medium mx-auto text-center">{props.data.body}</p>
